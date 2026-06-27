@@ -1,0 +1,7 @@
+# Copy this file to terraform.tfvars and fill in your values.
+# terraform.tfvars is gitignored and will never be committed.
+
+project          = "YOUR_GCP_PROJECT_ID"
+region           = "us-central1"
+credentials_file = ""
+state_bucket     = "YOUR_TF_STATE_BUCKET"
