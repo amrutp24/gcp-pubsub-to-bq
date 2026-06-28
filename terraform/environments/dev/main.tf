@@ -1,5 +1,6 @@
 module "pipeline" {
-  source = "../../modules/pubsub_bq_pipeline"
+  source  = "amrutp24/pubsub-bq-pipeline/google"
+  version = "~> 1.2.0"
 
   project    = var.project
   region     = var.region
@@ -14,6 +15,8 @@ module "pipeline" {
   # Match the SA account IDs that were created before the module refactor
   cloudrun_sa_account_id       = "cloudrun-pubsub-to-bq"
   pubsub_invoker_sa_account_id = "pubsub-cloudrun-invoker"
+
+  alert_email = var.alert_email
 
   labels = {
     purpose     = "testing"

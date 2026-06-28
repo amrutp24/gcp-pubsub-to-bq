@@ -5,3 +5,4 @@ project          = "YOUR_GCP_PROJECT_ID"
 region           = "us-central1"
 credentials_file = "" # optional: path to service account JSON
 state_bucket     = "YOUR_TF_STATE_BUCKET"
+alert_email      = "you@example.com"  # optional: email for dead-letter alerts

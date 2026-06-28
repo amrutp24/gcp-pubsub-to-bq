@@ -19,3 +19,9 @@ variable "state_bucket" {
   description = "GCS bucket for Terraform state"
   type        = string
 }
+
+variable "alert_email" {
+  description = "Email for dead-letter topic alerts (optional)"
+  type        = string
+  default     = null
+}
